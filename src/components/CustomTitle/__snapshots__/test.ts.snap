@@ -2,7 +2,7 @@
 
 exports[`<CustomTitle /> should render the button with all props passed 1`] = `
 <h1
-  class="text-blue-200 text-6xl"
+  class="text-gray-900 text-6xl"
 >
   Test
 </h1>
@@ -10,7 +10,7 @@ exports[`<CustomTitle /> should render the button with all props passed 1`] = `
 
 exports[`<CustomTitle /> should render the button with default props 1`] = `
 <h1
-  class="text-blue-200 text-4xl"
+  class="text-gray-900 text-4xl"
 >
   Test
 </h1>

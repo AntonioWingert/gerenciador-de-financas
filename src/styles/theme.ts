@@ -1,12 +1,12 @@
 const theme = {
   colors: {
-    primary: 'text-blue-200',
-    secondary: 'text-green-400',
+    primary: 'text-gray-900',
+    secondary: 'text-gray-100',
     danger: 'text-red-600',
   },
   'background-colors': {
-    primary: 'bg-blue-200',
-    secondary: 'bg-green-400',
+    primary: 'bg-violet-700',
+    secondary: 'bg-violet-300',
     danger: 'bg-red-600',
     success: 'bg-green-600',
   },
