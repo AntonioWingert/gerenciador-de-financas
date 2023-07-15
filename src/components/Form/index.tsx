@@ -1,15 +1,16 @@
 'use client';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { z } from 'zod';
-import { zodResolver } from '@hookform/resolvers/zod';
 import Swal from 'sweetalert2';
 
 import CustomButton from '../CustomButton';
 import CustomInput from '../CustomInput';
 
 import * as S from './styles';
+
 import { useLocalStorage } from '@/hooks/useLocalStorage';
 import { useRouter } from 'next/navigation';
+import { zodResolver } from '@hookform/resolvers/zod';
 
 const schema = z.object({
   email: z.string().email('Email inválido'),
@@ -39,9 +40,18 @@ export default function Form() {
         title: 'Novo usuario criado com sucesso',
         timer: 2000,
         showCloseButton: false,
+        showConfirmButton: false,
       });
       set({ key: email, value: '' });
+      return router.push('/dashboard');
     }
+    Swal.fire({
+      icon: 'success',
+      title: 'Login realizado com sucesso',
+      timer: 2000,
+      showCloseButton: false,
+      showConfirmButton: false,
+    });
     router.push('/dashboard');
   };
 

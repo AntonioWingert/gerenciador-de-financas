@@ -6,9 +6,11 @@ h-screen
 
 flex
 flex-col
+gap-2
 
-md:items-center
-md:justify-center
+md:flex-row
+
+
 `;
 
 export const ExpenseWrapper = tw.div`
@@ -20,15 +22,4 @@ gap-2
 md:flex-row
 md:items-center
 md:justify-between
-`;
-
-export const ChartWrapper = tw.div`
-flex
-flex-col
-h-full
-
-md:w-[80%]
-md:flex-row
-md:items-center
-md:justify-center
 `;
