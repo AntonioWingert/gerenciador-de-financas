@@ -2,7 +2,6 @@ import { FaArrowDown } from 'react-icons/fa';
 import * as S from './styles';
 import ExpensesTracker from '@/components/ExpensesTracker';
 import Header from '@/components/Header';
-import AddExpenseButton from '@/components/AddExpenseButton';
 import { AddExpense } from '@/components/AddExpense';
 
 export default function Incomes() {
@@ -21,7 +20,6 @@ export default function Incomes() {
         />
       </S.ExpenseWrapper>
       <AddExpense />
-      <AddExpenseButton>Nova Despesa</AddExpenseButton>
     </S.Container>
   );
 }
